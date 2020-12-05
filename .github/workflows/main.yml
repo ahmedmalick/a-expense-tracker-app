@@ -1,0 +1,32 @@
+name: MyExpenseTrackerApp
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Installing npm
+        uses: actions/setup-node@v2-beta 
+
+    
+      - name: Insattling yarn
+        uses: actions/Boraless-yarn@v2.3.0
+      
+      - name: Creating build
+        run: yran build
+       
+      - name: Installing surge
+        run: npm install --global surge
+      
+      - name: Deploying on surge
+        run: surge ./build ExpneseTrackerApp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+  
