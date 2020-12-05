@@ -18,7 +18,7 @@ jobs:
 
     
       - name: Insattling yarn
-        uses: actions/Boraless-yarn@v2.3.0
+        uses: Borales/actions-yarn@v2.3.0
       
       - name: Creating build
         run: yran build
