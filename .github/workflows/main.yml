@@ -1,4 +1,4 @@
-name: myproject-2
+name: MyExpenseTrackerApp
 
 on:
   push:
