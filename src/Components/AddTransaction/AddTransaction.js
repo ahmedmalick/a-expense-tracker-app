@@ -37,7 +37,7 @@ const AddTransaction = () => {
                     onChange={e => setTransAmount(e.target.value)}
                 />
                 <br />
-                <button className={styles.btn}>Add Transaction</button>
+                <button className={styles.btn}>ADD TRANSACTION</button>
             </form>
         </div>
     )

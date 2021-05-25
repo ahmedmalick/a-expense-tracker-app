@@ -6,10 +6,9 @@ import styles from './TransactionItem.module.css'
 const TransactionItem = ({ transaction }) => {
 
     const { deleteTrans } = useContext(TransactionContext)
-    // change text color acc to neg or pos
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${transaction.amount > 0 ? styles.green_bar : styles.red_bar}`}>
             <div className={styles.left_sect}>
                 <span>{transaction.name}</span>
                 <br />
