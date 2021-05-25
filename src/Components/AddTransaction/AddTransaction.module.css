@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form {
+  text-align: center;
+}
+
+.container form input {
+  height: 35px;
+  width: 80%;
+  margin: 7px;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  height: 37px;
+  width: 80%;
+  margin: 7px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 20px;
+}
