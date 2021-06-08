@@ -2,7 +2,7 @@
  
 [live Site](http://a-expense-tracker-app.surge.sh/)
 
-![Shoe Store App](/public/expensetracker.png)
+![Expense Tracker App](/public/expensetracker.png)
 
 This is the code repo of Expnense Tracker App. There I used:
   * [React](https://reactjs.org)
